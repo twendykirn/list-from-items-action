@@ -13,20 +13,18 @@ try {
     console.log('value:', listStringInput);
 
     let stringItems = stringItemsInput;
-    let isJsonObject = stringItems;
 
     try {
-        isJsonObject = JSON.parse(stringItems);
-    } catch (error) {}
-    isJsonObject = typeof isJsonObject !== 'string';
+        stringItems = JSON.parse(stringItems);
 
-    if (isJsonObject) {
-        if (isJsonObject.length) {
-            delete isJsonObject.length;
+        if (typeof stringItems !== 'string') {
+            if (stringItems.length) {
+                delete stringItems.length;
+            }
+
+            stringItems = Object.values(stringItems);
         }
-
-        stringItems = Object.values(isJsonObject);
-    }
+    } catch (error) {}
 
     const isArray = Array.isArray(stringItems);
 
