@@ -1,8 +1,8 @@
 name: 'Create list from String Items'
-description: 'Create list from String Array or Map'
+description: 'Create list from String Array or Object'
 inputs:
   stringItems:
-    description: "String array or map"
+    description: "String array or Object"
     required: true
   listString:
     description: 'String which will be used for each item in the list.'

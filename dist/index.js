@@ -25915,14 +25915,19 @@ try {
     console.log('value:', listStringInput);
 
     let stringItems = stringItemsInput;
-    const isMap = stringItems instanceof Map;
+    let isJsonObject = stringItems;
 
-    if (isMap) {
-        if (stringItems.has('length')) {
-            stringItems.delete('length');
+    try {
+        isJsonObject = JSON.parse(stringItems);
+    } catch (error) {}
+    isJsonObject = typeof isJsonObject !== 'string';
+
+    if (isJsonObject) {
+        if (isJsonObject.length) {
+            delete isJsonObject.length;
         }
 
-        stringItems = [...stringItems.values()];
+        stringItems = Object.values(isJsonObject);
     }
 
     const isArray = Array.isArray(stringItems);
