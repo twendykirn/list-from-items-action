@@ -25939,14 +25939,14 @@ try {
     let stringList = '';
 
     if (listStringInput === '') {
-        stringList = '- ' + stringArray.join('\n- ');
+        stringList = '- ' + stringItems.join('\n- ');
     } else {
         if (listStringInput.includes('${ITEM}')) {
-            stringArray.forEach(element => {
+            stringItems.forEach(element => {
                 stringList += listStringInput.replaceAll('${ITEM}', element);
             });
         } else {
-            stringList = listStringInput + stringArray.join(`\n${listStringInput}`);
+            stringList = listStringInput + stringItems.join(`\n${listStringInput}`);
         }
     }
 
