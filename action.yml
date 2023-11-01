@@ -1,0 +1,15 @@
+name: 'Create list from String Items'
+description: 'Create list from String Array or Map'
+inputs:
+  stringItems:
+    description: "String array or map"
+    required: true
+  listString:
+    description: 'String which will be used for each item in the list.'
+    default: ''
+outputs:
+  stringList:
+    description: "list in string format"
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

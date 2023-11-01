@@ -1,0 +1,23 @@
+{
+  "name": "list-from-items-action",
+  "version": "1.0.0",
+  "description": "GitHub Action to create a list from an Array or a Map of Strings",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twendykirn/list-from-items-action.git"
+  },
+  "keywords": [],
+  "author": "Igor Kirnosov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/twendykirn/list-from-items-action/issues"
+  },
+  "homepage": "https://github.com/twendykirn/list-from-items-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.1"
+  }
+}
