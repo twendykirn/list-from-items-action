@@ -4,11 +4,10 @@ As simple as it sounds.
 
 ## Inputs
 
-| Key           | Description                    | Type                             | Required      | Example                                                                                            |
-| ------------- | ------------------------------ | -------------------------------- | ------------- | -------------------------------------------------------------------------------------------------- |
-| `stringItems` | Your Array or Map of Strings   | `String[]`/`Record<any, string>` | **Yes**       | `['file1.js', 'file2.js', 'file3.js']`/`{length: 3, _0: 'file1.js', _1:'file2.js', _2:'file3.js'}` |
-| ------------- | ------------------------------ | -------------------------------- | ------------- | -------------------------------------------------------------------------------------------------- |
-| `listString`  | Your String for each list item | `String`                         | **No**        | `Item: ${ITEM}\n`                                                                                  |
+| Key           | Description                    | Type                             | Required | Example                                                                                            |
+| ------------- | ------------------------------ | -------------------------------- | -------- | -------------------------------------------------------------------------------------------------- |
+| `stringItems` | Your Array or Map of Strings   | `String[]`/`Record<any, string>` | **Yes**  | `['file1.js', 'file2.js', 'file3.js']`/`{length: 3, _0: 'file1.js', _1:'file2.js', _2:'file3.js'}` |
+| `listString`  | Your String for each list item | `String`                         | **No**   | `Item: ${ITEM}\n`                                                                                  |
 
 ## Outputs
 
